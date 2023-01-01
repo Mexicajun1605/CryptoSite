@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Cryptos</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src = "script.js" defer></script>
+</head>
+<body style="background-color: turquoise;">
+    <div id = "heading" style="border: 2px; border-color: black;">
+    <h1>Cryptos you should know about</h1>
+    <h2>Live Crypto Data</h2>
+    </div>
+    <div id = "cryptoContainer">
+    <!--Widgets for CryptoCurrency prices provided by CoinMarketCap-->
+    
+    <div class = "crypto" id ="eth">
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1027" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+    </div>
+    <div class = "crypto" id = "btc">
+        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+        </div>
+    <div class = "crypto" id = "ltc">
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="2" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+    </div>
+    </div>
+    <!--Descriptions for each Cryptocurrency-->
+    <div class = "desc">
+    <h2 style = "font-weight: bold;" id = "theBTC">Bitcoin</h2>
+    <p>From Wikipedia</p>
+    <p>Bitcoin (abbreviation: BTC; sign: ₿) is a protocol which implements a highly available, public, and decentralized ledger. In order to update the ledger, a user must prove they control an entry in the ledger. The protocol specifies that the entry indicates an amount of a token, bitcoin with a little b. The user can update the ledger, assigning some of their bitcoin to another entry in the ledger. Because the token has characteristics of money, it can be thought of as a digital currency. </p>
+    
+        <h2 style = "font-weight: bold;" id ="theETH">Ethereum</h2>
+        <p>From wikipedia</p>
+        <p>Ethereum is a decentralized, open-source blockchain with smart contract functionality. Ether (Abbreviation: ETH; sign: Ξ) is the native cryptocurrency of the platform. Among cryptocurrencies, ether is second only to bitcoin in market capitalization.
+
+            Ethereum was conceived in 2013 by programmer Vitalik Buterin. Additional founders of Ethereum included Gavin Wood, Charles Hoskinson, Anthony Di Iorio and Joseph Lubin.[6] In 2014, development work began and was crowdfunded, and the network went live on 30 July 2015. Ethereum allows anyone to deploy permanent and immutable decentralized applications onto it, with which users can interact. Decentralized finance (DeFi) applications provide a broad array of financial services without the need for typical financial intermediaries like brokerages, exchanges, or banks, such as allowing cryptocurrency users to borrow against their holdings or lend them out for interest. Ethereum also allows users to create and exchange NFTs, which are unique tokens representing ownership of an associated asset or privilege, as recognized by any number of institutions. Additionally, many other cryptocurrencies utilize the ERC-20 token standard on top of the Ethereum blockchain and have utilized the platform for initial coin offerings. </p>
+        
+    
+        <h2 style = "font-weight: bold;" id ="theLTC">Litecoin</h2>
+        <p>From Wikipedia</p>
+        <p>Litecoin (Abbreviation: LTC; sign: Ł) is a decentralized peer-to-peer cryptocurrency and open-source software project released under the MIT/X11 license. Inspired by Bitcoin, Litecoin was among the earliest altcoins, starting in October 2011. In technical details, the Litecoin main chain shares a slightly modified Bitcoin codebase. The practical effects of those codebase differences are lower transaction fees, faster transaction confirmations, and faster mining difficulty retargeting. Due to its underlying similarities to Bitcoin, Litecoin has historically been referred to as the "silver to Bitcoin's gold." In 2022, Litecoin added optional privacy features via soft fork through the MWEB (MimbleWimble extension block) upgrade.</p>
+        
+    </div>
+
+    <!--Header menu-->
+    <div class="header">
+        <div>
+            <a href = "#theBTC">Bitcoin</a>
+            <a href = "#theETH">Ethereum</a>
+            <a href = "#theLTC">Litecoin</a>
+        </div>
+    </div>
+    <!--Marquee rolling prices, anchor to bottom of page-->
+    <div id = "marquee">
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,2,74,1831,2010" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
+    </div>
+</body>
+</html>
